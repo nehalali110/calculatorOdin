@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-color: hsl(268, 75%, 9%);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.displayBar{
+    width: 26rem;
+    padding: 2rem 1.5rem;
+    font-weight: 900;
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+    text-align: right;
+    transition: all 1s ease;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 4px 4px 0px hsl(290, 70%, 36%);
+}
+
+
+.equals, .clear{
+    padding: 0.5rem 4.5rem;
+}
+
+.wrapper{
+    width: 26rem;
+    padding-bottom: 1rem;
+    background-color: hsl(268, 71%, 12%);
+}
+
+.keypad{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    /* border:2px solid lime; */
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.backspace, .clear{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 4px 4px 0px hsl(285, 91%, 52%);
+}
+
+.equals{
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 4px 4px 0px hsl(177, 92%, 70%);
+}
+
+.equals:hover{
+    box-shadow: 0 4px 8px 2px hsl(177, 92%, 70%);
+}
+button:hover{
+    box-shadow: 0 4px 8px 2px hsl(285, 91%, 52%);
+}
+/* media queries */
+
+@media screen and (max-width: 461px) {
+    .displayBar{
+        width: 85%;
+    }
+    .wrapper{
+        width: 85%;
+    }
+    .keypad{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
