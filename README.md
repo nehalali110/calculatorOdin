@@ -16,7 +16,7 @@ A simple calculator project implemented using pure HTML, CSS, and JavaScript. Th
 
 You can check the project below
 
-![Calculator Preview](https://nehalali110.github.io/calculatorOdin/)
+![Calculator Preview](https://nehalali110.github.io/calculatorOdin)
 
 ## Usage
 
